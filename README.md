@@ -11,10 +11,4 @@ npm run dev
 
 ## GitHub Pages
 
-This repo deploys from `main` through GitHub Actions. After the first push:
-
-1. Open the repository on GitHub
-2. Go to **Settings → Pages**
-3. Set **Source** to **GitHub Actions**
-
-The live site will be at `https://<your-username>.github.io/saaza/`.
+After pushing to GitHub, the site is published from the `gh-pages` branch at `https://<your-username>.github.io/saaza/`.
