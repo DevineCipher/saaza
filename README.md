@@ -9,6 +9,6 @@ npm install
 npm run dev
 ```
 
-## GitHub Pages
+## Live site
 
-After pushing to GitHub, the site is published from the `gh-pages` branch at `https://<your-username>.github.io/saaza/`.
+https://devinecipher.github.io/saaza/
