@@ -4,7 +4,9 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import WhatsAppButton from "./components/WhatsAppButton";
 import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import Contact from "./pages/Contact";
+import OrderSuccess from "./pages/OrderSuccess";
 import GraphicTees from "./pages/GraphicTees";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -25,6 +27,8 @@ function PageTitle() {
       "/graphic-tees": "Over-Sized Printed T-shirts | Saaza.pk",
       "/contact": "Contact Us | Saaza.pk",
       "/cart": "Cart | Saaza.pk",
+      "/checkout": "Checkout | Saaza.pk",
+      "/order-success": "Order booked | Saaza.pk",
       "/wishlist": "Wishlist | Saaza.pk",
     };
     if (location.pathname.startsWith("/shop/") && location.pathname !== "/shop") {
@@ -54,6 +58,8 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/contactus" element={<Navigate to="/contact" replace />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/order-success" element={<OrderSuccess />} />
           <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
         <Footer />

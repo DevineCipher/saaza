@@ -52,15 +52,20 @@ export default function Cart() {
             <span>Total</span>
             <strong>{formatPrice(cartTotal)}</strong>
           </div>
-          <a className="btn btn-dark" href={whatsappOrderUrl(message)} target="_blank" rel="noreferrer">
-            Order on WhatsApp
-          </a>
-          <p className="fine-print">
-            Checkout continues on WhatsApp at {SITE.phone}, same as the original store.
-          </p>
-          <button className="text-link" onClick={clearCart}>
-            Clear cart
-          </button>
+          <div className="cart-actions">
+            <Link className="btn btn-dark" to="/checkout">
+              Checkout with Cash on Delivery
+            </Link>
+            <p className="fine-print">
+              Book your order on the next page. Pay in cash when it is delivered.
+            </p>
+            <a className="text-link" href={whatsappOrderUrl(message)} target="_blank" rel="noreferrer">
+              Or send this cart on WhatsApp ({SITE.phone})
+            </a>
+            <button className="text-link" onClick={clearCart}>
+              Clear cart
+            </button>
+          </div>
         </>
       )}
     </main>
